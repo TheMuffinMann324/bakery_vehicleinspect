@@ -36,8 +36,8 @@ export const mockVehicle: VehicleData = {
 }
 
 const mockTrackers: TrackedVehicle[] = [
-  { plate: 'BAKERY01', brand: 'Pegassi', name: 'Zentorno', status: 'Parked', street: 'Vinewood Blvd / Power St', distance: 1240, coords: { x: 0, y: 0, z: 0 } },
-  { plate: '8JKD220', brand: 'Bravado', name: 'Buffalo', status: 'Stored' },
+  { plate: 'BFQSAU2C', brand: 'Grotti', name: 'GT500', status: 'Parked', street: 'Carcer Way', distance: 52, coords: { x: 0, y: 0, z: 0 } },
+  { plate: '0LF7PF22', brand: 'Pegassi', name: 'Faggio Sport', status: 'Stored' },
 ]
 
 function mockNui(event: string) {

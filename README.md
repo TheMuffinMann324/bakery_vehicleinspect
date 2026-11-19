@@ -4,6 +4,22 @@ GTA 6 style vehicle inspection for FiveM. Pop the hood of a car to see its stats
 
 Works with **QBX**, **QBCore** and **ESX**.
 
+![Inspect panel](docs/screenshots/inspect-overview.jpg)
+
+## Screenshots
+
+| Stats | Details |
+|---|---|
+| ![Stats page](docs/screenshots/inspect-stats.jpg) | ![Details page](docs/screenshots/inspect-details.jpg) |
+
+| GPS tracker (`/tracker`) | Registration clerk |
+|---|---|
+| ![Tracker](docs/screenshots/tracker.jpg) | ![Registration clerk](docs/screenshots/clerk.jpg) |
+
+<img src="docs/screenshots/tracker-phone.jpg" alt="Tracker phone app" width="300">
+
+*The tracker as a phone app (LB Phone, GKS Phone, CodeM mPhone, NPWD).*
+
 ## Features
 
 - **Inspect** – walk up to the front of a car and press **E**. The hood opens, the camera moves in and a panel shows three pages (switch with **G**):
@@ -86,23 +102,6 @@ local security = exports.bakery_vehicleinspect:GetVehicleSecurity(plate)
 
 -- field: 'registered' | 'alarm' | 'tracker', owner: citizenid (QBX/QBCore) or identifier (ESX)
 exports.bakery_vehicleinspect:SetVehicleSecurity(plate, owner, 'alarm', true)
-```
-
-## File layout
-
-```
-config.lua              settings
-bridge/                 framework, keys, phone, target and notify integrations
-shared/utils.lua        plate/hash helpers and client -> server callbacks
-server/vehicles.lua     vehicle catalog, security records, exports
-server/office.lua       registration clerk purchases
-server/security.lua     alarm: checks a break-in and alerts the owner
-server/tracker.lua      tracked vehicle locations
-client/inspect.lua      hood, camera and inspect panel
-client/office.lua       clerk NPC, blip and menu
-client/security.lua     break-in detection, alarm sound, owner alert
-client/tracker.lua      tracker screen, waypoint and ping
-web/                    React + Vite UI (panel, prompt, tracker app)
 ```
 
 ## Editing the UI

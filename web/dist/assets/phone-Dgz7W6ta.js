@@ -1,1 +1,0 @@
-import{a as e,o as t,t as n}from"./Tracker-BYrKNrv7.js";var r=t(),i=e();document.documentElement.classList.add(`phone`),new URLSearchParams(location.search).has(`embedded`)&&document.documentElement.classList.add(`embedded`),(0,r.createRoot)(document.getElementById(`root`)).render((0,i.jsx)(n,{}));
