@@ -113,3 +113,7 @@ npm install
 npm run dev     # preview in a browser: E toggles the panel, G switches pages, ?view=tracker shows the tracker
 npm run build   # writes web/dist, which the game loads
 ```
+
+## License
+
+[GPL-3.0](LICENSE)
